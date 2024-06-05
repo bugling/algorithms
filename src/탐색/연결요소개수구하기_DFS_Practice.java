@@ -69,7 +69,7 @@ import java.util.StringTokenizer;
  * }
  * 
  * **/
-public class 깊이우선탐색_DFS { 			// Depht First Serach
+public class 연결요소개수구하기_DFS_Practice { 			// Depht First Serach
 
 	//==============================================
 	// static 자료구조
