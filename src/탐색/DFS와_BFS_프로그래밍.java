@@ -145,6 +145,13 @@ public class DFS와_BFS_프로그래밍 {
 		while(!queue.isEmpty()) {
 			int now_Node = queue.poll();
 			System.out.println(now_Node + " ");
+			
+			for(int i : A[now_Node]) {
+				if(!visited[i]) {
+					visited[i] = true;
+					queue.add(i);
+				}
+			}
 		}
 		
 	}
