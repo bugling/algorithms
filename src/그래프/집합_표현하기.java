@@ -122,9 +122,10 @@ public class 집합_표현하기 {
 	public static int find(int n) {
 		if(n == parent[n]) {
 			return n;
+			
 		}else {
 								// value를 index로 바꿔서 또 찾아보기
-			return parent[n] = find(parent[n]);
+			return parent[n] = find(parent[n]);		// 결룩 재귀 호출을 여러번 반복하다가 n == parent[n] 조건에 걸리게 되어 "return n;"이 parent[n]에 들어가게 됨.  
 		}
 	}
 	
